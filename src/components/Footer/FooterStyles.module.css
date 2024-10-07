@@ -1,0 +1,147 @@
+.footer {
+  margin: 0;
+  padding: 0;
+
+  background-color: #323544;
+  .container {
+    padding-block: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .inputWrapper {
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      width: 70%;
+      gap: 8rem;
+      input {
+        width: 70%;
+        background-color: #1e202b;
+
+        padding-left: 1rem;
+        border-radius: 5rem;
+        height: 4rem;
+        border: none;
+        outline: none;
+        caret-color: #757575; /* Changes the caret (cursor) color */
+        color: #757575;
+      }
+
+      input::placeholder {
+        color: #757575;
+      }
+      .subscribe {
+        background-color: #009ad8;
+        color: #ffff;
+        position: absolute;
+        left: 880px;
+        border: none;
+        outline: none;
+        height: 3.5rem;
+        border-radius: 5rem;
+        width: 7rem;
+      }
+    }
+
+    .socialIcons {
+      /* position: absolute; */
+      display: flex;
+      justify-content: space-evenly;
+      width: 20%;
+      button {
+        border-radius: 50%;
+        background-color: #1e202b;
+        border: none;
+        outline: none;
+        width: 5rem;
+        height: 3rem;
+        margin-inline: 3px;
+
+        .icon {
+          color: #009ad8;
+          font-size: 1.5rem;
+        }
+      }
+      button:hover {
+        background-color: #009ad8;
+        .icon {
+          color: #ffff;
+        }
+      }
+    }
+    p {
+      text-align: left;
+      color: #bfc1c8;
+      width: 70%;
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    .container {
+      padding-block: 2rem;
+      .inputWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        gap: 1rem;
+        input {
+          display: block;
+          width: 100%;
+        }
+        .subscribe {
+          background-color: #009ad8;
+          color: #ffff;
+          position: absolute;
+          left: 255px;
+          bottom: -3486px;
+          border: none;
+          outline: none;
+          height: 3.5rem;
+          border-radius: 5rem;
+          width: 7rem;
+        }
+        .socialIcons {
+          /* position: absolute; */
+          display: flex;
+          /* flex-direction: column; */
+          justify-content: center;
+          align-items: center;
+          width: 70%;
+          button {
+            border-radius: 50%;
+            background-color: #1e202b;
+            border: none;
+            outline: none;
+            width: 5rem;
+            height: 3rem;
+            margin-inline: 3px;
+
+            .icon {
+              color: #009ad8;
+              font-size: 1.5rem;
+            }
+          }
+          button:hover {
+            background-color: #009ad8;
+            .icon {
+              color: #ffff;
+            }
+          }
+        }
+        p {
+          text-align: left;
+          color: #bfc1c8;
+          width: 70%;
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+}
