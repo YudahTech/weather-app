@@ -83,7 +83,7 @@ nav {
   }
 }
 
-@media (max-width: 786px) {
+@media (max-width: 1200px) {
   nav {
     display: flex;
     align-items: center;
